@@ -1,0 +1,71 @@
+.landingImage {
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    animation-duration: 5s;
+}
+
+.content {
+    text-align: center;
+    width: 40%;
+    margin: 20% 10% 25% 50%;
+    padding: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: #EEE;
+}
+
+.content > h1 {
+    font-size: 3.2rem;
+    text-shadow: 3px 3px 3px #444;
+}
+
+.launchBtn {
+    font-size: 1.2rem;
+    background-color: #EEE;
+    border: 1px solid #AAA;
+    border-radius: 30px;
+    padding: 15px 70px;
+    margin: 10px auto;
+}
+
+.linkBtnContainer > button {
+    color: #EEE;
+    font-size: 1rem;
+    display: block;
+    background-color: black;
+    border: 1px solid #EEE;
+    border-radius: 20px;
+    padding: 10px 50px;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-30px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+
+ @-webkit-keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-30px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
